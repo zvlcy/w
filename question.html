@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Question Form</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+     input:invalid {
+       border: 2px dashed red;
+     }
+
+     input:valid {
+       border: 2px solid black;
+     }
+     textarea:invalid {
+       border: 2px dashed red;
+     }
+
+     textarea:valid {
+       border: 2px solid black;
+     }
+     </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><img src="images/logo.jpg" height="50" width="50"></td>
+        <td><h1>Online Shopping</h1></td>
+      </tr>
+    </table>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="contact.html">Contact</a>  |
+      <a href="question.html">Question?</a> |
+      <a href="https://www.facebook.com/">Facebook</a>
+    </nav>
+
+    <p>How can we help you?</p>
+
+    <div class="">
+      <form><fieldset>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="" required>
+        <br><br>
+        <select id="topic" name="Topic" required>
+          <option value="topic">Topic</option>
+          <option value="data">Data Privacy</option>
+          <option value="ship">Shipping</option>
+          <option value="general">General</option>
+        </select>
+        <br><br>
+        <label for="question">Question:</label><br>
+        <textarea name="message" rows="10" cols="30" required></textarea>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="" required>
+        <br><br>
+        <label for="phone">Phone number: +60</label>
+        <input type="text" id="phone" name="phone" value="" required>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+
+  </body>
+</html>
